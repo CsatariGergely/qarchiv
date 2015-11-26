@@ -1,0 +1,15 @@
+<html>
+  <head>
+    <title>Quarchive</title>
+	<link rel='icon' href='/static/images/favicon.ico ' type='image/x-icon'/ >
+  </head>
+  <body>
+    <form action="" method=post enctype=multipart/form-data>
+      <input type=file name=file>
+      <input type=submit value=Upload>
+    </form>
+{% if filename and (filename != "") %}	
+	<p>Upload of {{filename}} succesfull.</p>
+{% endif %}
+  </body>
+</html>
